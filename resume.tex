@@ -1,0 +1,171 @@
+%-------------------------
+% Resume in Latex
+% Author : Nguyen Trung Duc
+% License : MIT
+%------------------------
+% \usepackage[utf8]{inputenc}
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeItemTwo}[2]{
+  \item\small{
+        \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        #1 & #2
+        \end{tabular*}\vspace{-4pt}
+    }
+}
+
+% \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\newcommand{\resumeSubheadOne}[1]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadTwo}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadThree}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\normalsize#3}
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadFour}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-10pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%              CV STARTS HERE              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+%-----------HEADING------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\huge Nguyen Trung Duc} &
+    Email: \href{mailto:trungducnguyen1511@gmail.com}{trungducnguyen1511@gmail.com} \\
+   \href{http://ngntrgduc.github.io}{https://ngntrgduc.github.io} &
+  Mobile: +84982602801
+\end{tabular*}
+
+
+%-----------EDUCATION------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadFour{VNUHCM - University of Science}{Ho Chi Minh, Vietnam}
+      {Faculty of Mathematics and Computer Science}{Aug. 2021 -- Sep. 2025}
+  \resumeSubHeadingListEnd
+
+
+%-----------SKILLS------------
+\section{Skills}
+    \resumeSubHeadingListStart
+        \resumeItem{Programming Languages: Familiar with C$++$ and Python. Know Haskell. Interested in Julia, Go.}
+        \resumeItem{Tools: Git, Vim, LaTeX.}
+        \resumeItem{Librarys: Pandas.}
+        \resumeItem{Soft Skills: Teamwork, Problem Solving.}
+    \resumeSubHeadingListEnd
+
+
+%-----------CERTIFICATES------------
+\section{Certificates}
+    \resumeSubHeadingListStart
+        % \resumeItem{Machine Learning on Coursera}
+        % \resumeItem{Mathematics for Machine Learning: Linear Algebra on Coursera}
+        \resumeItemTwo{\href{https://codelearn.io/certification/ndblztg4}{Advanced C++}}{Codelearn.io}
+    \resumeSubHeadingListEnd
+
+%---------PROJECTS----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeSubheadThree{My personal website}{\href{https://github.com/ngntrgduc/ngntrgduc.github.io}{\textcolor{cyan}{Github}}}{Apply my web knowkledge to build a website.}
+    \resumeSubHeadingListEnd
+
+
+%------------EXPERIENCE------------
+
+
+%------------AWARDS------------
+\section{Achievements and Awards}
+    \resumeSubHeadingListStart
+        \resumeSubheadTwo{Excellent Student - City Level, Grade 12, Third prize in Maths}{2021}
+    \resumeSubHeadingListEnd
+
+
+%----------ACTIVITIES------------
+\section{Activities}
+    \resumeSubHeadingListStart
+        \resumeSubheadThree{Content writer at \href{https://www.facebook.com/RDSproject/}{RDS}}{Jan. 2022 -- Present}{Write about Linear Algebra in LaTeX}
+    \resumeSubHeadingListEnd
+    
+    
+ %----------INTEREST------------   
+ \section{Interest}
+    \resumeSubHeadingListStart
+        \resumeItem{Solve coding problems.}
+        \resumeItem{Learn new things.}
+    \resumeSubHeadingListEnd
+    
+    
+\end{document}
