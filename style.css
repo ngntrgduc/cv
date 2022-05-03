@@ -1,0 +1,11 @@
+body {
+    border: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.resume {
+    border: 0px;
+    width: 100%;
+    height: 900px;
+}
