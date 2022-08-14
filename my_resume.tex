@@ -16,6 +16,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage{xcolor}
+\usepackage{fontawesome5}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -38,7 +39,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \color{black}\vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Custom commands
@@ -102,44 +103,54 @@
 
 
 %-----------HEADING------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\huge Nguyen Trung Duc} &
-    Email: \href{mailto:trungducnguyen1511@gmail.com}{trungducnguyen1511@gmail.com} \\
-   \href{http://ngntrgduc.github.io}{https://ngntrgduc.github.io} &
-  Mobile: +84982602801
-\end{tabular*}
+\begin{center}
+    {\Huge \textbf{Nguyen Trung Duc}} \\
+    \vspace{6pt}
+    \href{mailto:trungducnguyen1511@gmail.com}{\faEnvelope\ trungducnguyen1511@gmail.com}
+    \quad
+    \href{https://www.linkedin.com/in/ducnguyen1511/}{\faLinkedin\ {ducnguyen1511}} 
+    \quad
+    \href{https://github.com/ngntrgduc}{\faGithub\ {ngntrgduc}}
+    \quad
+    \href{https://ngntrgduc.github.io/}{\faGlobe\ {ngntrgduc.github.io}}
+    \vspace{-6pt}
+\end{center}
 
+
+%-----------INTRODUCTION------------
+% I'm a sophomore at University of Science - VNUHCM, majoring in Mathematics and Computer Science. I'm studying Mathematics, AI, ML and I'm planning to work in Data Science.
 
 %-----------EDUCATION------------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheadFour{VNUHCM - University of Science}{Ho Chi Minh, Vietnam}
-      {Faculty of Mathematics and Computer Science}{Aug. 2021 -- Aug. 2025}
+    \resumeSubheadFour{University of Science - VNUHCM}{Aug. 2021 -- Present}
+      {Faculty of Mathematics and Computer Science}{Ho Chi Minh city, Vietnam}
   \resumeSubHeadingListEnd
 
 
 %-----------SKILLS------------
 \section{Skills}
     \resumeSubHeadingListStart
-        \resumeItem{Programming Languages: Familiar with C$++$ and Python. Know JavaScript, Haskell. Interested in Julia, Go}
+        \resumeItem{Programming Languages: Familiar with C$++$ and Python. Know JavaScript, SQL}
         \resumeItem{Tools: Git, Vim, LaTeX}
         \resumeItem{Libraries: NumPy, Pandas, Seaborn}
-        \resumeItem{Soft Skills: Teamwork, Problem Solving}
+        \resumeItem{Soft Skills: Teamwork, Problem Solving, Listening}
     \resumeSubHeadingListEnd
 
 
 %-----------CERTIFICATES------------
 \section{Certificates}
     \resumeSubHeadingListStart
-        % \resumeItem{Machine Learning on Coursera}
-        % \resumeItem{Mathematics for Machine Learning: Linear Algebra on Coursera}
-        \resumeItemTwo{\href{https://codelearn.io/certification/ndblztg4}{Advanced C++}}{Codelearn.io}
+        \resumeItem{Mathematics for Machine Learning: Linear Algebra}
+        \resumeItem{\href{https://codelearn.io/certification/ndblztg4}{Advanced C++}}
+        \resumeItem{\href{https://www.hackerrank.com/certificates/0cbeca00b68c}{SQL (Basic)}}
+        
     \resumeSubHeadingListEnd
 
 %---------PROJECTS----------
 \section{Projects}
     \resumeSubHeadingListStart
-        \resumeSubheadThree{bio}{\href{https://github.com/ngntrgduc/bio}{\textcolor{cyan}{Github}}}{Apply my web knowledge to build a website}
+        \resumeSubheadThree{My personal website}{\href{https://github.com/ngntrgduc/bio}{https://github.com/ngntrgduc/bio}}{Apply my web knowledge to build a website}
     \resumeSubHeadingListEnd
 
 
@@ -147,25 +158,25 @@
 
 
 %------------AWARDS------------
-\section{Achievements and Awards}
+\section{Achievements}
     \resumeSubHeadingListStart
-        \resumeSubheadTwo{Excellent Student - City Level, Grade 12, Third prize in Maths}{2021}
+        \resumeSubheadTwo{Excellent Student - City Level, Grade 12, Third prize in Mathematics}{2021}
     \resumeSubHeadingListEnd
 
 
 %----------ACTIVITIES------------
 \section{Activities}
     \resumeSubHeadingListStart
-        \resumeSubheadThree{Content writer at \href{https://www.facebook.com/RDSproject/}{RDS}}{Nov. 2021 -- Present}{Write about Linear Algebra in LaTeX}
+        \resumeSubheadThree{Content writer at \href{https://www.facebook.com/RDSproject/}{RDS}}{Nov. 2021 -- Apr. 2022}{Write about Linear Algebra in LaTeX}
     \resumeSubHeadingListEnd
     
     
  %----------INTEREST------------   
- \section{Interest}
+ \section{Miscellaneous}
     \resumeSubHeadingListStart
-        \resumeItem{Solve coding problems on \href{https://codeforces.com/profile/sanshironagato}{Codeforces}, \href{https://www.codewars.com/users/ngntrgduc}{Codewars} and \href{https://leetcode.com/ngntrgduc/}{Leetcode}}
-        \resumeItem{Learn new things, build stuff}
-        % \resumeItem{Building things.}
+        \resumeItem{Interested in Julia, Go, Haskell}
+        \resumeItem{Solve coding problems on \href{https://www.codewars.com/users/ngntrgduc}{Codewars} and \href{https://leetcode.com/ngntrgduc/}{Leetcode}}
+        \resumeItem{Eager to learn new things, code stuff}
     \resumeSubHeadingListEnd
     
     
