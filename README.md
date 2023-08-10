@@ -1,3 +1,3 @@
-# my-resume ![](https://img.shields.io/github/last-commit/ngntrgduc/my-resume/master?style=flat-square&color=cyan)
+![](https://img.shields.io/github/last-commit/ngntrgduc/my-resume/master?style=flat-square&color=cyan)
 
-You can find my resume [here](https://ngntrgduc.github.io/my-resume/)
+You can find my CV [here](https://ngntrgduc.github.io/my-resume/).
