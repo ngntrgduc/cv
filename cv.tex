@@ -1,0 +1,252 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{fontawesome5}
+
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    % colorlinks,
+    % linkcolor=black,
+    % urlcolor=cyan,
+    pdftitle={Nguyen Trung Duc's CV},
+    pdfauthor={Trung-Duc Nguyen}
+}
+
+\usepackage[
+    a4paper,
+    % margin=0.5in,
+    top=0.5in, bottom=0.5in, left=0.75in, right=0.75in,
+]{geometry}
+
+\input{glyphtounicode}
+\pdfgentounicode=1 % Ensure that generate pdf is machine readable/ATS parsable
+
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-0.5em} \bfseries \color{black} \large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Heading formatting
+\newcommand{\heading}[4]{
+    % \renewcommand{\arraystretch}{1}
+    \normalsize
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\[-2pt]
+      \textit{\small#3} & \textit{\small #4}
+    \end{tabular*}
+    \vspace{-2pt}
+}
+
+\newcommand{\subheading}[2]{
+    \normalsize
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}
+    \vspace{-2pt}
+}
+
+% https://github.com/sleepymalc/LaTeX-Template/blob/main/CV/header.tex
+% \newcommand{\detail}[3]{
+%     {
+%         \small{
+%             \expandafter\ifx\expandafter\relax\detokenize{#1}\relax
+%             \textnormal{#2}
+%             \else
+%                   \textnormal{\textbf{#1}: #2}
+%             \fi
+%             \expandafter\ifx\expandafter\relax\detokenize{#3}\relax
+%             \else
+%                   \hfill\textnormal{\small #3}{\parfillskip=5pt\par}%
+%             \fi
+%         }
+%     }
+% }
+
+% Item formatting
+\setlist[itemize, 1]{
+    leftmargin=*, 
+    label=\(\bullet\), 
+    first=\small,
+    % after=\vspace{-6pt},
+    % noitemsep
+    itemsep=-2pt,
+}
+
+\setlist[itemize, 2]{
+    left=1pt,
+    label=\(\circ\),
+    first=\vspace{-6pt} \small,
+    after=\vspace{-4pt},
+    % noitemsep,
+    itemsep=-2pt,
+}
+
+\renewcommand{\familydefault}{\sfdefault} % change to sans serif font, easy-on-eyes
+
+\renewcommand{\baselinestretch}{1.1}
+
+\renewcommand{\tabcolsep}{0pt} % gap between columns
+
+% \raggedright % without hyphenation
+
+% \definecolor{theme}{RGB}{30, 102, 245}
+
+
+
+\begin{document}
+
+
+\begin{center}
+    {\Huge \textbf{Nguyen Trung Duc}} \\
+    % {\Huge \textbf{Trung-Duc Nguyen}} \\
+    \vspace{0.7em}
+    
+    \href{mailto:trungducnguyen1511@gmail.com}{\faEnvelope\ trungducnguyen1511@gmail.com} \quad
+    \href{https://www.linkedin.com/in/ngntrgduc/}{\faLinkedin\ {ngntrgduc}} 
+    \quad
+    \href{https://github.com/ngntrgduc}{\faGithub\ {ngntrgduc}}
+    \quad
+    \href{https://ngntrgduc.github.io/}{\faHome\ {ngntrgduc.github.io}}
+\end{center}
+
+
+% \section{Summary}
+% \begin{quotation}
+%     A junior majoring in Mathematical Methods in Computer Science. 
+%     % Though my major focus on AI, Machine Learning, and Deep learning, I found myself much more immersed in the realm of Optimization and Scientific Computing. 
+%     While my major focuses on AI, my heart belongs to Optimization and Scientific Computing. Decoding the intricacies of algorithms and wielding computational power for real-world impact excites me deeply
+% \end{quotation}
+
+
+\section{Education}
+    \begin{itemize}
+        \item \heading{University of Science - VNUHCM}{Aug. 2021 -- 2025 (expected)}
+          {Bachelor of Science in Mathematics and Computer Science}{Ho Chi Minh City, Vietnam}
+        \begin{itemize}
+            \item \textbf{GPA:} 8.4/10.00 (3.5/4)
+            \item \textbf{Relevant coursework:}
+            Linear Algebra, 
+            Higher Algebra, 
+            Data Structures and Algorithms, 
+            Computational Softwares Laboratory, 
+            Discrete Mathematics, 
+            Numerical Method in Optimization, 
+            Numerical Linear Algebra
+            % Patern recognition,
+            % Statistical Data Processing, 
+            % Arithmetic and Algorithms, 
+            % Algorithm analysis,
+            % Stochastic Processes,
+            % Digital Image Analysis and Processing,
+            % Introduction to Artificial Intelligence,
+            % Introduction to Machine Learning,
+            % Data Mining, 
+            % }{}
+        \end{itemize}
+  \end{itemize}
+
+
+\section{Skills}
+    \begin{itemize}
+        % \item \textbf{Technical}: Data visualization
+        
+        \item \textbf{Programming Languages:} 
+        Python, JavaScript, Julia, 
+        R, 
+        C\texttt{++}, 
+        % SQL, 
+        MATLAB
+        % Haskell
+        
+        \item \textbf{Libraries:} NumPy, Pandas, Matplotlib, Seaborn,  scikit-learn, 
+        Requests, Beautiful Soup, Selenium
+        % PyTorch, Streamlit
+
+        \item \textbf{Tools:} Git, \LaTeX, Vim
+        
+    \end{itemize}
+
+
+% \section{Experience}
+%     Not yet
+
+
+\section{Activities}
+    \begin{itemize}
+        
+        \item \subheading{\href{https://viasm.edu.vn/hdkh/VORN-03}{Winter School on Game Theory and Combinatorial Optimization}}{Dec. 2023}
+        
+        \item \heading{\href{https://viasm.edu.vn/hdkh/ssds2023}{Summer School in Data Science}}{Aug. 2023}{Studied different Data Science and AI research topics}{}
+        
+        \item \heading{\href{https://viasm.edu.vn/hdkh/somsaml}{Summer school on Bayesian statistics and computation}}{Jul. 2023}{Studied both modern and foundational topics in Mathematical statistics and Machine Learning}{}
+
+        \item \subheading{\href{https://www.fit.hcmus.edu.vn/vn/Default.aspx?tabid=292\&id=15455}{Summer School on LLM and AI}}{Jul. 2023}
+        
+        \item \heading{\href{https://www.facebook.com/gdsc.hcmus}{Google Developer Student Clubs - HCMUS}}{Nov. 2022 -- Aug. 2023}{AI and Machine Learning specialist}{}
+            \begin{itemize}
+                \item Prepared materials for Session 5: Git in the Zone in cs101 workshop 
+            \end{itemize}
+        
+        \item \heading{\href{https://www.facebook.com/RDSproject/}{Road to Data Science project}}{Nov. 2021 -- Mar. 2022}{Content writer: Linear Algebra}{}
+    \end{itemize}
+
+
+\section{Honors and Awards}
+    \begin{itemize}
+        \item \subheading{\href{https://viasm.edu.vn/hoat-dong-khoa-hoc/tin-tuc/chi-tiet/hoc-bong-chuong-trinh-toan-nam-hoc-2023-2024}{\small National Program for the Development of Mathematics  2021--2030 Scholarship}}{Nov. 2023}
+        
+        \item \subheading{\small Excellent Student - City Level, Grade 12, Third prize in Maths}{2021}
+    \end{itemize}
+
+
+\section{Projects}
+    \begin{itemize}
+        \item \href{https://github.com/ngntrgduc/ngntrgduc.github.io}{\textbf{ngntrgduc.github.io:}} My blog, built with Hugo
+        
+        \item \href{https://github.com/ngntrgduc/toy-with-iris}{\textbf{toy-with-iris:}} Implementation of some classification algorithms for iris dataset
+    
+        \item \href{https://github.com/ngntrgduc/pomodoro}{\textbf{pomodoro:}} Aesthetic, Minimalist Pomodoro
+    
+        \item \href{https://github.com/ngntrgduc/visualimiss}{\textbf{visualimiss:}} Small Python package to visualize missing data 
+        
+        \item \href{https://github.com/ngntrgduc/Dictionary-Look-Up}{\textbf{Dictionary-Look-Up:}} Browser extension to look up words
+        
+        \item \href{https://github.com/ngntrgduc/HCMUS-GPA-bookmarklet}{\textbf{HCMUS-GPA-bookmarklet:}} Calculate GPA on Portal via bookmarklet
+    \end{itemize}
+    \vspace{-0.8em}
+    And \href{https://github.com/ngntrgduc/projects}{other projects on GitHub}.
+
+
+\section{Certifications}
+    \begin{itemize}
+        % \item IELTS: 6.5
+        \item \href{https://coursera.org/share/c68e20d03f93ad3689a80fc68a52989c}{Machine learning - Coursera}
+        
+        \item \href{https://www.hackerrank.com/certificates/6286b603c4f7}{Problem Solving (Basic) - HackerRank}
+    
+        % \item \href{https://www.hackerrank.com/certificates/0cbeca00b68c}{SQL (Basic) - HackerRank}
+    
+        % \item \href{https://codelearn.io/certification/ndblztg4}{Advanced C++}
+    \end{itemize}
+    
+
+% \section{Miscellaneous}
+%     \begin{itemize}
+%         \item Interested in Functional Programming
+%         % \item In leisure time I code stuff while listen to music, learn new things, and blog
+%         \item Solve coding problems on \href{https://www.codewars.com/users/ngntrgduc}{Codewars},
+%         \href{https://codeforces.com/profile/ngntrgduc}{Codeforces}
+%         and \href{https://leetcode.com/ngntrgduc/}{Leetcode} when boring
+%         \item FOSS lover
+%     \end{itemize}
+
+
+\end{document}
