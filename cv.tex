@@ -8,12 +8,16 @@
 \usepackage{xcolor}
 \usepackage{multicol}
 \usepackage{fontawesome5}
+\usepackage{fontawesome}
+
+\definecolor{primaryColor}{RGB}{0, 80, 160}
 
 \usepackage[hidelinks]{hyperref}
 \hypersetup{
-    % colorlinks,
-    % linkcolor=black,
-    % urlcolor=cyan,
+    colorlinks,
+    % linkcolor=primaryColor,
+    % urlcolor=primaryColor,
+    urlcolor=black,
     pdftitle={Nguyen Trung Duc's CV},
     pdfauthor={Trung-Duc Nguyen}
 }
@@ -21,18 +25,26 @@
 \usepackage[
     a4paper,
     % margin=0.5in,
-    top=0.5in, bottom=0.5in, left=0.75in, right=0.75in,
+    top=0.5in, 
+    bottom=0.5in, 
+    left=0.75in, 
+    right=0.75in,
 ]{geometry}
 
 \input{glyphtounicode}
 \pdfgentounicode=1 % Ensure that generate pdf is machine readable/ATS parsable
 
 \setlength{\tabcolsep}{0in}
+% \setlength{\parskip}{2pt} % more space between paragraphs
 
 % Sections formatting
 \titleformat{\section}{
     \vspace{-0.5em} \bfseries \color{black} \large
-}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+}{}{0em}{}[
+    % \color{gray}
+    \color{black}
+    \titlerule \vspace{-6pt}
+]
 
 % Heading formatting
 \newcommand{\heading}[4]{
@@ -53,21 +65,12 @@
     \vspace{-2pt}
 }
 
-% https://github.com/sleepymalc/LaTeX-Template/blob/main/CV/header.tex
-% \newcommand{\detail}[3]{
-%     {
-%         \small{
-%             \expandafter\ifx\expandafter\relax\detokenize{#1}\relax
-%             \textnormal{#2}
-%             \else
-%                   \textnormal{\textbf{#1}: #2}
-%             \fi
-%             \expandafter\ifx\expandafter\relax\detokenize{#3}\relax
-%             \else
-%                   \hfill\textnormal{\small #3}{\parfillskip=5pt\par}%
-%             \fi
-%         }
-%     }
+% \newcommand{\project}[3]{
+%     \normalsize
+%     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%       \href{#1}{\textbf{#2\ \small\faGithub}} & #3 \\
+%     \end{tabular*}
+%     \vspace{-2pt}
 % }
 
 % Item formatting
@@ -100,9 +103,18 @@
 % \definecolor{theme}{RGB}{30, 102, 245}
 
 
+% \urlstyle{same}
+
+% % New command for external links with an icon
+% \newcommand{\hrefWithIcon}[2]{%
+%     \href{#1}{\textcolor{primaryColor}{#2} \textcolor{primaryColor}{
+%     % \raisebox{.15ex}
+%     {\footnotesize \faExternalLink\ }}}%
+% }
+
+
 
 \begin{document}
-
 
 \begin{center}
     {\Huge \textbf{Nguyen Trung Duc}} \\
@@ -110,19 +122,19 @@
     \vspace{0.7em}
     
     \href{mailto:trungducnguyen1511@gmail.com}{\faEnvelope\ trungducnguyen1511@gmail.com} \quad
-    \href{https://www.linkedin.com/in/ngntrgduc/}{\faLinkedin\ {ngntrgduc}} 
-    \quad
-    \href{https://github.com/ngntrgduc}{\faGithub\ {ngntrgduc}}
-    \quad
-    \href{https://ngntrgduc.github.io/}{\faHome\ {ngntrgduc.github.io}}
+    \href{https://www.linkedin.com/in/ngntrgduc/}{\faLinkedin\ {ngntrgduc}} \quad
+    \href{https://github.com/ngntrgduc}{\faGithub\ {ngntrgduc}} \quad
+    \href{https://ngntrgduc.github.io/}{\faHome\ {ngntrgduc.github.io}} 
+    
 \end{center}
 
+% \vspace{1em}
 
 % \section{Summary}
 % \begin{quotation}
 %     A junior majoring in Mathematical Methods in Computer Science. 
-%     % Though my major focus on AI, Machine Learning, and Deep learning, I found myself much more immersed in the realm of Optimization and Scientific Computing. 
-%     While my major focuses on AI, my heart belongs to Optimization and Scientific Computing. Decoding the intricacies of algorithms and wielding computational power for real-world impact excites me deeply
+%     % Though my major focus on AI, Machine Learning, and Deep learning, 
+%       I found myself much more immersed in the realm of ... 
 % \end{quotation}
 
 
@@ -131,47 +143,64 @@
         \item \heading{University of Science - VNUHCM}{Aug. 2021 -- 2025 (expected)}
           {Bachelor of Science in Mathematics and Computer Science}{Ho Chi Minh City, Vietnam}
         \begin{itemize}
-            \item \textbf{GPA:} 8.4/10.00 (3.5/4)
+            \item \textbf{Current GPA:} 8.42/10 (3.6/4)
             \item \textbf{Relevant coursework:}
-            Linear Algebra, 
-            Higher Algebra, 
+            % Linear Algebra, Higher Algebra, 
             Data Structures and Algorithms, 
-            Computational Softwares Laboratory, 
+            % Computational Softwares Laboratory, 
             Discrete Mathematics, 
+            Statistical Data Processing, 
+            OOP,
             Numerical Method in Optimization, 
-            Numerical Linear Algebra
-            % Patern recognition,
-            % Statistical Data Processing, 
-            % Arithmetic and Algorithms, 
-            % Algorithm analysis,
-            % Stochastic Processes,
-            % Digital Image Analysis and Processing,
-            % Introduction to Artificial Intelligence,
-            % Introduction to Machine Learning,
-            % Data Mining, 
-            % }{}
+            Digital Image Analysis and Processing,
+            % Digital Image Processing,
+            Introduction to Artificial Intelligence,
+            Pattern Recognition,
+            Numerical Linear Algebra,
+            Algorithmic Number Theory,
+            Algorithm Analysis,
+            Stochastic Processes,
+            Machine Learning,
+            Data Mining
+            % Ill-posed problems, 
+            % Numerical Optimization, 
+            % Data visualization, 
+            % Financial Mathematics, 
+            % Financial and monetary theory
         \end{itemize}
   \end{itemize}
 
 
 \section{Skills}
     \begin{itemize}
-        % \item \textbf{Technical}: Data visualization
-        
         \item \textbf{Programming Languages:} 
-        Python, JavaScript, Julia, 
+        Python, 
+        JavaScript, 
         R, 
-        C\texttt{++}, 
-        % SQL, 
-        MATLAB
+        C\texttt{++},
+        % MATLAB,
+        Julia, 
+        SQL
         % Haskell
         
-        \item \textbf{Libraries:} NumPy, Pandas, Matplotlib, Seaborn,  scikit-learn, 
-        Requests, Beautiful Soup, Selenium
-        % PyTorch, Streamlit
-
-        \item \textbf{Tools:} Git, \LaTeX, Vim
+        \item \textbf{Libraries:} 
+        NumPy, Pandas, Matplotlib, 
+        Seaborn, 
+        scikit-learn
         
+        \item \textbf{Web:} 
+        HTML, CSS, 
+        Requests, 
+        Beautiful Soup, 
+        Selenium, 
+        Flask
+        % PyTorch, 
+        % PyTorch Lightning
+        % Streamlit
+
+        % \item \textbf{Databases:} SQLite, MySQL
+
+        \item \textbf{Others:} Git, \LaTeX, Vim, WSL, Docker
     \end{itemize}
 
 
@@ -181,72 +210,125 @@
 
 \section{Activities}
     \begin{itemize}
+        % \item \subheading{\href{https://viasm.edu.vn/hdkh/mini_course_math_modeling}{Course: An Example-based Introduction to Mathematical Modeling \faExternalLink}}{Nov. 2024}
         
-        \item \subheading{\href{https://viasm.edu.vn/hdkh/VORN-03}{Winter School on Game Theory and Combinatorial Optimization}}{Dec. 2023}
+        \item \subheading{\href{http://www.rnta.eu/HCMC2024/index.html}{A CIMPA school on Applied Number Theory \faExternalLink}}{Jun. 2024}
         
-        \item \heading{\href{https://viasm.edu.vn/hdkh/ssds2023}{Summer School in Data Science}}{Aug. 2023}{Studied different Data Science and AI research topics}{}
+        % \item \subheading{\href{https://viasm.edu.vn/hdkh/VORN-03}{Winter school on Game Theory and Combinatorial Optimization}}{Dec. 2023}
         
-        \item \heading{\href{https://viasm.edu.vn/hdkh/somsaml}{Summer school on Bayesian statistics and computation}}{Jul. 2023}{Studied both modern and foundational topics in Mathematical statistics and Machine Learning}{}
+        \item \subheading{\href{https://viasm.edu.vn/hdkh/ssds2023}{Summer school in Data Science \faExternalLink}}{Aug. 2023}
+        % {Studied different Data Science and AI research topics}{}
+        
+        \item \subheading{\href{https://viasm.edu.vn/hdkh/somsaml}{Summer school on Bayesian statistics and computation \faExternalLink}}{Jul. 2023}
+        % {Studied both modern and foundational topics in Mathematical statistics and Machine Learning}
+        % {}
 
-        \item \subheading{\href{https://www.fit.hcmus.edu.vn/vn/Default.aspx?tabid=292\&id=15455}{Summer School on LLM and AI}}{Jul. 2023}
-        
-        \item \heading{\href{https://www.facebook.com/gdsc.hcmus}{Google Developer Student Clubs - HCMUS}}{Nov. 2022 -- Aug. 2023}{AI and Machine Learning specialist}{}
+        \item \heading{\href{https://www.facebook.com/gdgoc.hcmus}{Google Developer Student Clubs - HCMUS \faExternalLink}}{Nov. 2022 -- Aug. 2023}{AI and Machine Learning specialist}{}
             \begin{itemize}
-                \item Prepared materials for Session 5: Git in the Zone in cs101 workshop 
+                \item Prepared materials for Session 5: Git in the Zone in cs101 workshop
             \end{itemize}
         
-        \item \heading{\href{https://www.facebook.com/RDSproject/}{Road to Data Science project}}{Nov. 2021 -- Mar. 2022}{Content writer: Linear Algebra}{}
+        \item \heading{\href{https://www.facebook.com/RDSproject/}{Road to Data Science project \faExternalLink}}{Nov. 2021 -- Mar. 2022}{Content writer on Linear Algebra}{}
     \end{itemize}
 
 
 \section{Honors and Awards}
     \begin{itemize}
-        \item \subheading{\href{https://viasm.edu.vn/hoat-dong-khoa-hoc/tin-tuc/chi-tiet/hoc-bong-chuong-trinh-toan-nam-hoc-2023-2024}{\small National Program for the Development of Mathematics  2021--2030 Scholarship}}{Nov. 2023}
+        \item \subheading{\href{https://viasm.edu.vn/hoat-dong-khoa-hoc/tin-tuc/chi-tiet/hoc-bong-chuong-trinh-toan-nam-hoc-2023-2024}{\small National Program for the Development of Mathematics  2021--2030 Scholarship \faExternalLink}}{2023 -- 2024}
+        % {One of 100 people selected in national, for 2 semesters}{}
         
         \item \subheading{\small Excellent Student - City Level, Grade 12, Third prize in Maths}{2021}
     \end{itemize}
 
 
 \section{Projects}
+% \section{Selected projects}
     \begin{itemize}
-        \item \href{https://github.com/ngntrgduc/ngntrgduc.github.io}{\textbf{ngntrgduc.github.io:}} A blog, built with Hugo
+            
+        % \item \heading{\href{https://github.com/ngntrgduc/seminar}{Handling Missing Data \faGithub}}{Python, Pytorch, PyTorch Lightning}{Seminar coursework}{}
+        %     \begin{itemize}
+        %         \item Research on NeuMiss network, working on missing data problem.
+        %         % \item Research experience
+        %     \end{itemize}
         
-        \item \href{https://github.com/ngntrgduc/toy-with-iris}{\textbf{toy-with-iris:}} Implementation of some classification algorithms for iris dataset
-    
-        \item \href{https://github.com/ngntrgduc/pomodoro}{\textbf{pomodoro:}} Aesthetic, Minimalist Pomodoro
-    
-        \item \href{https://github.com/ngntrgduc/visualimiss}{\textbf{visualimiss:}} Small Python package to visualize missing data 
+        \item \subheading{\href{https://github.com/ngntrgduc/english-learning-system}{English learning system \faGithub}}
+        {Python, asyncio, logging}
+        \begin{itemize}
+            \item Use Async/Await to speed up crawling speed, 
+            % \item Learned to use logging
+            % \item Use 
+            logging to log crawling results
+            \item Interact with Notion's database using API
+        \end{itemize}
+
+        \item \subheading{\href{https://github.com/ngntrgduc/musyc-player}{Musyc player \faGithub}}
+        {Python, Flask}
+        \begin{itemize}
+            % \item Learned how to use database?
+            % \item Dockerized the project?
+            \item Music player web app, built with Flask
+        \end{itemize}
         
-        \item \href{https://github.com/ngntrgduc/Dictionary-Look-Up}{\textbf{Dictionary-Look-Up:}} Browser extension to look up words
+        \item \subheading{\href{https://github.com/ngntrgduc/ngntrgduc.github.io}{ngntrgduc.github.io \faGithub}}
+        {Hugo}
+        \begin{itemize}
+            \item Personal blog about Maths, CS, and other interesting topic
+        \end{itemize}
         
-        \item \href{https://github.com/ngntrgduc/HCMUS-GPA-bookmarklet}{\textbf{HCMUS-GPA-bookmarklet:}} Calculate GPA on Portal via bookmarklet
+        
+        \item \subheading{\href{https://github.com/ngntrgduc/Dictionary-Look-Up}{Dictionary Look Up \faGithub}}
+        {HTML, CSS, JS}
+        \begin{itemize}
+            \item Browser extension to look up English vocabulary faster
+            % \item Learned how browser extension works
+        \end{itemize}
+        
+        % \item \subheading{\href{https://github.com/ngntrgduc/HCMUS-GPA-bookmarklet}{HCMUS-GPA-bookmarklet \faGithub}}{HTML, CSS, JS}
+        %     \begin{itemize}
+        %         \item Calculate GPA on HCMUS's Portal via bookmarklet
+        %     \end{itemize}
     \end{itemize}
-    \vspace{-0.8em}
-    And \href{https://github.com/ngntrgduc/projects}{other projects on GitHub}.
+    % \vspace{-0.8em} And \href{https://github.com/ngntrgduc/info}{other projects on GitHub}.
 
 
 \section{Certifications}
     \begin{itemize}
-        % \item IELTS: 6.5
-        \item \href{https://coursera.org/share/c68e20d03f93ad3689a80fc68a52989c}{Machine learning - Coursera}
+        % \item \heading{IELTS}{2025}{Average: 6.5 (Listening: , Reading: , Writing: , Speaking: )}{}
         
-        \item \href{https://www.hackerrank.com/certificates/6286b603c4f7}{Problem Solving (Basic) - HackerRank}
+        % \item \heading{TOEIC Speaking and Writing}{2024}{Total Score: 181+/400 (Speaking: /200, Writing: /200)}{}
+        
+        % \item \heading{TOEIC Listening and Reading}{2024}{Total Score: 450+/990 (Listening: /495, Reading: /495)}{}
+
+        % \item \heading{Vietnamese standardized test of English Proficiency (VSTEP 3-5) }{Jul. 2024}{Score: 6.5/10 (B2)}{}
+
+        \item \subheading{Vietnamese standardized test of English Proficiency (VSTEP 3-5) }{Jul. 2024}
+            \begin{itemize}
+                \item Score: 6.5/10 (B2)
+            \end{itemize}
+        
+        \item \subheading{Coursera: \normalfont \href{https://coursera.org/share/c68e20d03f93ad3689a80fc68a52989c}{Machine learning}}{}
+        
+        \item \subheading{HackerRank: \normalfont \href{https://www.hackerrank.com/certificates/6286b603c4f7}{Problem Solving (Basic)}, \href{https://www.hackerrank.com/certificates/0cbeca00b68c}{SQL (Basic)}}{}
     
-        % \item \href{https://www.hackerrank.com/certificates/0cbeca00b68c}{SQL (Basic) - HackerRank}
+        % \item \subheading{MOS Word, MOS PowerPoint}
     
-        % \item \href{https://codelearn.io/certification/ndblztg4}{Advanced C++}
     \end{itemize}
     
 
 % \section{Miscellaneous}
 %     \begin{itemize}
-%         \item Interested in Functional Programming
-%         % \item In leisure time I code stuff while listen to music, learn new things, and blog
-%         \item Solve coding problems on \href{https://www.codewars.com/users/ngntrgduc}{Codewars},
-%         \href{https://codeforces.com/profile/ngntrgduc}{Codeforces}
-%         and \href{https://leetcode.com/ngntrgduc/}{Leetcode} when boring
+%         \item Interested in Functional Programming, Theoretical Computer Science
+%         % \item Solve coding problems on \href{https://www.codewars.com/users/ngntrgduc}{Codewars},
+%         % \href{https://codeforces.com/profile/ngntrgduc}{Codeforces}
+%         % and \href{https://leetcode.com/ngntrgduc/}{Leetcode} when boring
 %         \item FOSS lover
 %     \end{itemize}
 
+
+\vfill
+% \vspace{2mm}
+% \begin{flushright}
+    \hfill\textcolor{gray}{\textit{Last Updated: \today}}
+% \end{flushright}
 
 \end{document}
