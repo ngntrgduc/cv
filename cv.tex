@@ -1,6 +1,6 @@
 \documentclass[letterpaper,11pt]{article}
 \usepackage{latexsym}
-\usepackage[empty]{fullpage}
+\usepackage[empty]{fullpage}    
 \usepackage{titlesec}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
@@ -113,7 +113,6 @@
 % }
 
 
-
 \begin{document}
 
 \begin{center}
@@ -122,8 +121,9 @@
     \vspace{0.7em}
 
     % {\faPhone\ $+$84982-602-801} \quad
-    \href{mailto:trungducnguyen1511@gmail.com}{\faEnvelope\ trungducnguyen1511@gmail.com} \quad 
-    \href{https://www.linkedin.com/in/ngntrgduc/}{\faLinkedin\ {ngntrgduc}} \quad
+    \href{mailto:trungducnguyen1511@gmail.com}{\faEnvelope\ {trungducnguyen1511@gmail.com}} \quad 
+    \href{https://www.linkedin.com/in/ngntrgduc/}{\faLinkedin\ {ngntrgduc}
+    } \quad
     \href{https://github.com/ngntrgduc}{\faGithub\ {ngntrgduc}} \quad
     \href{https://ngntrgduc.github.io/}{\faHome\ {ngntrgduc.github.io}} 
 \end{center}
@@ -137,246 +137,192 @@
 %       I found myself much more immersed in the realm of ... 
 % \end{quotation}
 
-% \newcommand{\education}{
-\begin{filecontents*}[overwrite]{education}
-    \section{Education}
+
+\section{Education}
+\begin{itemize}
+    \item \heading{University of Science - VNUHCM}{Aug. 2021 -- 2025 (expected)}
+      {Bachelor of Science in Mathematics and Computer Science}{Ho Chi Minh City, Vietnam}
     \begin{itemize}
-        \item \heading{University of Science - VNUHCM}{Aug. 2021 -- 2025 (expected)}
-          {Bachelor of Science in Mathematics and Computer Science}{Ho Chi Minh City, Vietnam}
-        \begin{itemize}
-            \item \textbf{Current GPA:} 8.55/10 (3.6/4)
-            \item \textbf{Relevant coursework:}
-            % Linear Algebra, Higher Algebra, 
-            Data Structures and Algorithms, 
-            % Computational Softwares Laboratory, 
-            % Discrete Mathematics, 
-            Statistical Data Processing, 
-            OOP, % Object-Oriented Programming,
-            % Numerical Method in Optimization, 
-            % Digital Image Processing,
-            % Digital Image Analysis and Processing,
-            % Introduction to Artificial Intelligence,
-            Numerical Linear Algebra,
-            Pattern Recognition,
-            Algorithmic Number Theory,
-            Algorithm Analysis,
-            Stochastic Processes,
-            Machine Learning,
-            Data Mining,
-            % Ill-posed problems, 
-            % Numerical Optimization, 
-            Data visualization,
-            Financial Mathematics, 
-            Financial and monetary theory
-            % \item \textbf{Thesis:} ``...'' \hfill(work in progress)\\
-            % \textit{Advisor: Dr. Ngo Minh Man, Dr. Vu Duc Thinh}
-        \end{itemize}
+        \item \textbf{Current GPA:} 8.55/10 (3.66/4)
+        \item \textbf{Relevant coursework:}
+        % Linear Algebra, Higher Algebra, 
+        Data Structures and Algorithms, 
+        % Computational Softwares Laboratory, 
+        % Discrete Mathematics, 
+        Statistical Data Processing, 
+        Digital Image Processing,
+        OOP, % Object-Oriented Programming,
+        % Numerical Method in Optimization, 
+        % Digital Image Analysis and Processing,
+        Introduction to Artificial Intelligence,
+        Numerical Linear Algebra,
+        Pattern Recognition,
+        Algorithm Analysis,
+        % Algorithmic Number Theory,
+        % Stochastic Processes,
+        Machine Learning,
+        Data Mining,
+        % Ill-posed problems, 
+        % Numerical Optimization, 
+        Data visualization,
+        Financial Mathematics, 
+        Financial and Monetary theory
+        % Information Theory
+        \item \textbf{Thesis:} Lead-Lag Detection in Trading
+        % \hfill
+        (work in progress)
     \end{itemize}
-% }
-\end{filecontents*}
+\end{itemize}
 
 
-% \newcommand{\skills}{
-\begin{filecontents*}[overwrite]{skills}
-    \section{Skills}
-    \begin{itemize}
-        \item \textbf{Programming Languages:} 
-        Python, 
-        JavaScript, 
-        C\texttt{++},
-        R, 
-        % MATLAB,
-        % Julia, 
-        SQL
-        % Haskell
-        
-        \item \textbf{Libraries:} 
-        NumPy, Pandas, Matplotlib, 
-        Seaborn, 
-        scikit-learn
-        
-        \item \textbf{Web:} 
-        HTML, CSS, 
-        Requests, 
-        Beautiful Soup, 
-        Selenium, 
-        Flask
-        % PyTorch, 
-        % PyTorch Lightning
-        % Streamlit
+\section{Skills}
+\begin{itemize}
+    \item \textbf{Programming Languages:} 
+    Python, 
+    JavaScript, 
+    C\texttt{++},
+    R, 
+    % MATLAB,
+    % Julia, 
+    SQL
     
-        % \item \textbf{Databases:} SQLite, MySQL
+    \item \textbf{Libraries:} 
+    NumPy, Pandas, Matplotlib, 
+    seaborn, 
+    scikit-learn
     
-        \item \textbf{Others:} 
-        Git, 
-        % \LaTeX, 
-        Vim, 
-        WSL 
-        % Docker
-    \end{itemize}
-% }
-\end{filecontents*}
+    \item \textbf{Web:} 
+    % HTML, CSS, 
+    Requests, 
+    Beautiful Soup, 
+    Selenium, 
+    Flask
+    % PyTorch, 
+    % Streamlit
+
+    % \item \textbf{Databases:} SQLite, MySQL
+
+    % \item \textbf{Others:} 
+    \item \textbf{Tools:} 
+    Git, 
+    % LaTeX, 
+    Vim, 
+    WSL 
+    % Docker
+
+    % \item \textbf{Languages:} Vietnamese (native), English (upper-intermediate)
+\end{itemize}
+
 
 
 % \section{Experience}
 %     Not yet
 
 
-% \newcommand{\activities}{
-\begin{filecontents*}[overwrite]{activities}
-    \section{Activities}
-    \begin{itemize}
-        % \item \subheading{\href{https://viasm.edu.vn/hdkh/mini_course_math_modeling}{Course: An Example-based Introduction to Mathematical Modeling \faExternalLink}}{Nov. 2024}
-        
-        \item \subheading{\href{http://www.rnta.eu/HCMC2024/index.html}{A CIMPA school on Applied Number Theory \faExternalLink}}{Jun. 2024}
-        
-        % \item \subheading{\href{https://viasm.edu.vn/hdkh/VORN-03}{Winter school on Game Theory and Combinatorial Optimization}}{Dec. 2023}
-        
-        \item \subheading{\href{https://viasm.edu.vn/hdkh/ssds2023}{Summer school in Data Science \faExternalLink}}{Aug. 2023}
-        % {Studied different Data Science and AI research topics}{}
-        
-        \item \subheading{\href{https://viasm.edu.vn/hdkh/somsaml}{Summer school on Bayesian statistics and computation \faExternalLink}}{Jul. 2023}
-        % {Studied both modern and foundational topics in Mathematical statistics and Machine Learning}
-        % {}
+
+\section{Activities}
+\begin{itemize}
+    \item \subheading{\href{http://www.rnta.eu/HCMC2024/index.html}{A CIMPA school on Applied Number Theory \faExternalLink}}{Jun. 2024}
+
+    \item \subheading{\href{https://viasm.edu.vn/hdkh/ssds2023}{Summer school in Data Science \faExternalLink}}{Aug. 2023}
+    % {Studied different Data Science and AI research topics}{}
     
-        \item \heading{\href{https://www.facebook.com/gdgoc.hcmus}{Google Developer Student Clubs - HCMUS \faExternalLink}}{Nov. 2022 -- Aug. 2023}{AI and Machine Learning specialist}{}
-            \begin{itemize}
-                \item Prepared materials for Session 5: Git in the Zone in cs101 workshop
-            \end{itemize}
-        
-        \item \heading{\href{https://www.facebook.com/RDSproject/}{Road to Data Science project \faExternalLink}}{Nov. 2021 -- Mar. 2022}{Content writer on Linear Algebra}{}
-    \end{itemize}
-% }
-\end{filecontents*}
+    \item \subheading{\href{https://viasm.edu.vn/hdkh/somsaml}{Summer school on Bayesian statistics and computation \faExternalLink}}{Jul. 2023}
+    % {Studied both modern and foundational topics in Mathematical statistics and Machine Learning}
+    % {}
 
-
-% \newcommand{\honorsawards}{
-\begin{filecontents*}[overwrite]{honorsawards}
-    \section{Honors and Awards}
-    \begin{itemize}
-        \item \subheading{\href{https://viasm.edu.vn/hoat-dong-khoa-hoc/tin-tuc/chi-tiet/hoc-bong-chuong-trinh-toan-nam-hoc-2023-2024}{\small Scholarship for Math Major Undergraduates \faExternalLink}}{2023 -- 2024}
-        % {One of 100 people selected in national, for 2 semesters}{}
-        % National Program for the Development of Mathematics  2021--2030 Scholarship 
-        % Scholarship for Math Major Undergraduates
-        
-        \item \subheading{\small Excellent Student - City Level, Grade 12, Third prize in Maths}{2021}
-    \end{itemize}
-% }
-\end{filecontents*}
-
-
-% \newcommand{\projects}{
-\begin{filecontents*}[overwrite]{projects}
-    \section{Projects}
-    % \section{Selected projects}
-    \begin{itemize}
-            
-        \item \heading{\href{https://github.com/ngntrgduc/seminar}{Handling Missing Data \faGithub}}{Python, scikit-learn, Pytorch}{Seminar coursework}{}
-            \begin{itemize}
-                \item Researched on NeuMiss networks, handle missing data in linear regression problems
-            \end{itemize}
-        
-        % \item \subheading{\href{https://github.com/ngntrgduc/english-learning-system}{English learning system \faGithub}}
-        % {Python, Beautiful Soup}
-        % \begin{itemize}
-        %     % \item Used async/await to increase crawling speed, 
-        %     % logging to log crawling results
-        %     % \item Interacted with Notion's database API
-        %     \item Implemented async/await to enhance crawling speed, integrated logging to track results
-        %     \item Interacted with Notion's database API for data management
-        % \end{itemize}
-    
-        \item \subheading{\href{https://github.com/ngntrgduc/musyc-player}{Musyc player \faGithub}}
-        {Python, Flask}
+    \item \heading{\href{https://www.facebook.com/gdgoc.hcmus}{Google Developer Student Clubs - HCMUS \faExternalLink}}{Nov. 2022 -- Aug. 2023}{AI and Machine Learning specialist}{}
         \begin{itemize}
-            \item Music player web app built with Flask 
+            \item Prepared materials for Session 5: Git in the Zone in cs101 workshop
         \end{itemize}
     
-        \item \subheading{\href{https://github.com/ngntrgduc/instagram-downloader}{instagram-downloader \faGithub}}
-        {Python, Selenium, Beautiful Soup}
+    \item \heading{\href{https://www.facebook.com/RDSproject/}{Road to Data Science project \faExternalLink}}{Nov. 2021 -- Mar. 2022}{Content writer on Linear Algebra}{}
+\end{itemize}
+
+
+
+\section{Honors and Awards}
+\begin{itemize}
+    \item \subheading{\href{https://viasm.edu.vn/hoat-dong-khoa-hoc/tin-tuc/chi-tiet/hoc-bong-chuong-trinh-toan-nam-hoc-2023-2024}{\small Scholarship from National Program for the Development of Mathematics, VIASM \faExternalLink}}{2023 -- 2024}
+    % {One of 100 people selected in national, for 2 semesters}{}
+    % National Program for the Development of Mathematics  2021--2030 Scholarship 
+    % Scholarship for Math Major Undergraduates
+    
+    \item \subheading{\small Excellent Student - City Level, Grade 12, Third prize in Maths}{2021}
+\end{itemize}
+
+
+
+\section{Projects}
+% \section{Selected projects}
+\begin{itemize}
+    \item \heading{\href{https://github.com/ngntrgduc/seminar}{Handling Missing Data \faGithub}}
+        {Python, scikit-learn, Pytorch}{Seminar coursework}{}
         \begin{itemize}
-            \item Instagram images downloader using Selenium
+            \item Researched and implemented NeuMiss networks, handle missing data in linear regression problems
+        \end{itemize}
+    
+    \item \heading{\href{https://github.com/ngntrgduc/english-learning-system}{English learning system \faGithub}}
+        {Python, Beautiful Soup, click, rich}{Scripts to learn English efficiently}{}
+        \begin{itemize}
+            \item Implemented async/await to enhance crawling speed, logging to track results, CLI version with fzf
+            \item Interacted with Notion API for vocabulary management, Gemini API to generate definitions, sentences
         \end{itemize}
 
-        \item \subheading{\href{https://github.com/ngntrgduc/get-info-github}{Get Info GitHub \faGithub}}
-        {Python, requests}
+    \item \heading{\href{https://github.com/ngntrgduc/get-info-github}{Get Info GitHub \faGithub}}
+        {Python, requests}{Crawl repositories, starred, gists of a user on GitHub}{}
         \begin{itemize}
-            \item Crawl repositories, starred, gists of a user on GitHub
             \item Reduced crawling time by switching from REST API to GraphQL
         \end{itemize}
-        
-        % \item \subheading{\href{https://github.com/ngntrgduc/ngntrgduc.github.io}{ngntrgduc.github.io \faGithub}}
-        % {Hugo}
+    
+    \item \heading{\href{https://github.com/ngntrgduc/musyc-player}{Musyc player \faGithub}}
+        {Python, Flask}{Music player web app built with Flask}{}
         % \begin{itemize}
-        %     \item Personal blog about Mathematics, Computer Science, and other interesting topics
-        % \end{itemize}
-        
-        
-        % \item \subheading{\href{https://github.com/ngntrgduc/Dictionary-Look-Up}{Dictionary Look Up \faGithub}}
-        % {HTML, CSS, JS}
-        % \begin{itemize}
-        %     \item Browser extension to look up English vocabulary faster
+        %     \item Music player web app built with Flask 
         % \end{itemize}
 
-    \end{itemize}
-    % \vspace{-0.8em} And \href{https://github.com/ngntrgduc/info}{other projects on GitHub}.
-% }
-\end{filecontents*}
-
-% \newcommand{\certifications}{
-\begin{filecontents*}[overwrite]{certifications}
-    \section{Certifications}
-    \begin{itemize}
-        % \item \heading{IELTS}{2025}{Average: 6.5 (Listening: , Reading: , Writing: , Speaking: )}{}
-        
-        % \item \heading{TOEIC Speaking and Writing}{2024}{Total Score: 181+/400 (Speaking: /200, Writing: /200)}{}
-        
-        % \item \heading{TOEIC Listening and Reading}{2024}{Total Score: 450+/990 (Listening: /495, Reading: /495)}{}
+    % \item \subheading{\href{https://github.com/ngntrgduc/instagram-downloader}{instagram-downloader \faGithub}}
+    % {Python, Selenium, Beautiful Soup}
+    % \begin{itemize}
+    %     \item Instagram images downloader using Selenium
+    % \end{itemize}
     
-        % \item \heading{Vietnamese standardized test of English Proficiency (VSTEP 3-5) }{Jul. 2024}{Score: 6.5/10 (B2)}{}
+    % \item \subheading{\href{https://github.com/ngntrgduc/ngntrgduc.github.io}{ngntrgduc.github.io \faGithub}}
+    % {Hugo}
+    % \begin{itemize}
+    %     \item Personal blog about Mathematics, Computer Science, and other interesting topics
+    % \end{itemize}
     
-        \item \subheading{Vietnamese standardized test of English Proficiency (VSTEP 3-5) }{Jul. 2024}
-            \begin{itemize}
-                \item Score: 6.5/10 (B2)
-            \end{itemize}
-        
-        \item \subheading{Coursera: \normalfont \href{https://coursera.org/share/c68e20d03f93ad3689a80fc68a52989c}{Machine learning}}{}
-        
-        \item \subheading{HackerRank: \normalfont \href{https://www.hackerrank.com/certificates/6286b603c4f7}{Problem Solving (Basic)}, \href{https://www.hackerrank.com/certificates/0cbeca00b68c}{SQL (Basic)}}{}
+    % \item \subheading{\href{https://github.com/ngntrgduc/Dictionary-Look-Up}{Dictionary Look Up \faGithub}}
+    % {HTML, CSS, JS}
+    % \begin{itemize}
+    %     \item Browser extension to look up English vocabulary faster
+    % \end{itemize}
+
+\end{itemize}
+
+
+
+\section{Certifications}
+\begin{itemize}
+    % \item \heading{IELTS}{2025}{Average: 6.5 (Listening: , Reading: , Writing: , Speaking: )}{}
     
-        % \item \subheading{MOS Word, MOS PowerPoint}
+    % \item \heading{TOEIC Speaking and Writing}{2024}{Total Score: 181+/400 (Speaking: /200, Writing: /200)}{}
     
-    \end{itemize}
-% }
-\end{filecontents*}
+    % \item \heading{TOEIC Listening and Reading}{2024}{Total Score: 450+/990 (Listening: /495, Reading: /495)}{}
 
+    % \item \heading{Vietnamese standardized test of English Proficiency (VSTEP 3-5) }{Jul. 2024}{Score: 6.5/10 (B2)}{}
+    \item \subheading{Vietnamese standardized test of English Proficiency (VSTEP 3-5) }{Jul. 2024}
+        \begin{itemize}
+            \item Score: 6.5/10 (B2)
+        \end{itemize}
+    
+    % \item \subheading{Coursera: \normalfont \href{https://coursera.org/share/c68e20d03f93ad3689a80fc68a52989c}{Machine learning}}{}
+    
+    % \item \subheading{HackerRank: \normalfont \href{https://www.hackerrank.com/certificates/6286b603c4f7}{Problem Solving (Basic)}, \href{https://www.hackerrank.com/certificates/0cbeca00b68c}{SQL (Basic)}}{}
 
+\end{itemize}
 
-% \section{Miscellaneous}
-%     \begin{itemize}
-%         \item Interested in Functional Programming, Theoretical Computer Science
-%         % \item Solve coding problems on \href{https://www.codewars.com/users/ngntrgduc}{Codewars},
-%         % \href{https://codeforces.com/profile/ngntrgduc}{Codeforces}
-%         % and \href{https://leetcode.com/ngntrgduc/}{Leetcode} when boring
-%         \item FOSS lover
-%     \end{itemize}
-
-
-
-% Main, better for reordering
-% \education
-% \skills
-% \projects
-% \honorsawards
-% \activities
-% \certifications
-
-\input{education}
-\input{skills}
-\input{activities}
-\input{honorsawards}
-\input{projects}
-\input{certifications}
 
 
 \vfill
