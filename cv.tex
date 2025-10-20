@@ -112,6 +112,13 @@
 %     {\footnotesize \faExternalLink\ }}}%
 % }
 
+\setlength\parindent{0pt}   % new paragraphs will not be indented
+% \setlength{\parskip}{0.2cm} % more space between paragraphs
+% \setlength{\parskip}{0.25cm} % more space between paragraphs
+
+
+\newcommand{\link}{\small \faExternalLink}
+
 
 \begin{document}
 
@@ -128,49 +135,57 @@
     \href{https://ngntrgduc.github.io/}{\faHome\ {ngntrgduc.github.io}} 
 \end{center}
 
-% \vspace{1em}
+
+\begin{comment}
+\vspace{0.4em}
 
 % \section{Summary}
 % \begin{quotation}
-%     A junior majoring in Mathematical Methods in Computer Science. 
-%     % Though my major focus on AI, Machine Learning, and Deep learning, 
-%       I found myself much more immersed in the realm of ... 
+% I am a final-year undergraduate in Mathematics and Computer Science.
+% My current interests focus on many aspects of Probability and Statistic including 
+% Data Science, Statistical Learning, and Quantiative Finance. I~am looking for graduate study on Probability and Statistics or Applied Mathematics in the future.
+Highly motivated final-year undergraduate in Mathematics and Computer Science with a strong interest~in Probability and Statistics, Data Science, Statistical Learning, and Quantitative Finance. 
+% I am 
+Seeking graduate study in Probability and Statistics or Applied Mathematics to further develop expertise in these~areas.
 % \end{quotation}
+\end{comment}
 
 
 \section{Education}
 \begin{itemize}
-    \item \heading{University of Science - VNUHCM}{Aug. 2021 -- 2025 (expected)}
+    \item \heading{University of Science - VNUHCM}{Sep. 2021 -- Sep. 2025}
       {Bachelor of Science in Mathematics and Computer Science}{Ho Chi Minh City, Vietnam}
     \begin{itemize}
-        \item \textbf{Current GPA:} 8.55/10 (3.66/4)
+        \item \textbf{GPA:} 8.65/10 (3.69/4)
         \item \textbf{Relevant coursework:}
         % Linear Algebra, Higher Algebra, 
         Data Structures and Algorithms, 
         % Computational Softwares Laboratory, 
         % Discrete Mathematics, 
         Statistical Data Processing, 
-        Digital Image Processing,
-        OOP, % Object-Oriented Programming,
-        % Numerical Method in Optimization, 
+        % Digital Image Processing,
         % Digital Image Analysis and Processing,
-        Introduction to Artificial Intelligence,
+        % Numerical Method in Optimization, 
+        OOP, % Object-Oriented Programming,
+        % Introduction to Artificial Intelligence,
+        Artificial Intelligence,
         Numerical Linear Algebra,
         Pattern Recognition,
         Algorithm Analysis,
         % Algorithmic Number Theory,
-        % Stochastic Processes,
+        Stochastic Processes,
         Machine Learning,
         Data Mining,
         % Ill-posed problems, 
         % Numerical Optimization, 
         Data visualization,
         Financial Mathematics, 
-        Financial and Monetary theory
-        % Information Theory
-        \item \textbf{Thesis:} Lead-Lag Detection in Trading
+        Monetary theory,
+        Information Theory
+        \item \textbf{Thesis title:} Lead-Lag Detection in Trading
         % \hfill
-        (work in progress)
+        % (work in progress)
+        % \item \textbf{Advisor:} Dr. Ngo Minh Man, Dr. Vu Duc Thinh
     \end{itemize}
 \end{itemize}
 
@@ -196,17 +211,17 @@
     Requests, 
     Beautiful Soup, 
     Selenium, 
-    Flask
+    % Flask,
     % PyTorch, 
-    % Streamlit
+    Streamlit
 
-    % \item \textbf{Databases:} SQLite, MySQL
+    % \item \textbf{Databases:} SQLite
 
     % \item \textbf{Others:} 
     \item \textbf{Tools:} 
     Git, 
-    % LaTeX, 
-    Vim, 
+    LaTeX, 
+    % Vim, 
     WSL 
     % Docker
 
@@ -217,6 +232,80 @@
 
 % \section{Experience}
 %     Not yet
+
+
+% \section{Projects}
+\section{Selected Projects}
+\begin{itemize}
+    \item \subheading{\href{https://github.com/ngntrgduc/movies-manager}{Movies Manager \faGithub}}
+        {Python, Streamlit, Click}
+        % {Personal Movies Manager web app}{}
+        \begin{itemize}
+            \item Developed a movie management tool
+            % Built 
+            % a movies manager 
+            with Streamlit, with full CRUD operations, CLI support, and Power BI dashboard for data visualization
+            % , with SQLites as database
+            % \item Full CRUD support, 
+        \end{itemize}
+
+    \item \subheading{\href{https://github.com/ngntrgduc/seminar}{Handling Missing Data \faGithub}}
+        {Python, scikit-learn, Pytorch}
+        % {Seminar coursework}{}
+        \begin{itemize}
+            \item Researched and implemented NeuMiss networks to handle missing data in linear regression problems
+        \end{itemize}
+    
+    \item \subheading{\href{https://github.com/ngntrgduc/english-learning-system}{English learning system \faGithub}}
+        {Python, Click}
+        % {Scripts to learn English efficiently}{}
+        \begin{itemize}
+            \item Built a comprehensive language learning CLI tool, integrated Gemini API to generate definitions and sentences
+            % achieved significant speedup using async/await for web crawling
+            % \item integrated Gemini API to generate definitions and sentences
+        \end{itemize}
+
+    \item \subheading{\href{https://github.com/ngntrgduc/get-info-github}{Get Info GitHub \faGithub}}
+        {Python, Requests}
+        \begin{itemize}
+            \item Built a data crawling tool to get user's public repositories, stars, and gists using GitHub GraphQL API
+            % \item Reduced crawling time by switching from REST API to GraphQL
+        \end{itemize}
+    
+    % \item \subheading{\href{https://github.com/ngntrgduc/musyc-player}{Musyc player \faGithub}}
+    %     {Python, Flask}
+    %     \begin{itemize}
+    %         \item Music player web app built with Flask 
+    %     \end{itemize}
+
+    % \item \subheading{\href{https://github.com/ngntrgduc/instagram-downloader}{instagram-downloader \faGithub}}
+    % {Python, Selenium, Beautiful Soup}
+    % \begin{itemize}
+    %     \item Instagram images downloader using Selenium
+    % \end{itemize}
+    
+    % \item \subheading{\href{https://github.com/ngntrgduc/Dictionary-Look-Up}{Dictionary Look Up \faGithub}}
+    % {HTML, CSS, JS}
+    % \begin{itemize}
+    %     \item Browser extension to look up English vocabulary faster
+    % \end{itemize}
+
+\end{itemize}
+
+
+
+
+
+
+\section{Honors and Awards}
+\begin{itemize}
+    \item \subheading{\href{https://viasm.edu.vn/hoat-dong-khoa-hoc/tin-tuc/chi-tiet/hoc-bong-chuong-trinh-toan-nam-hoc-2023-2024}{\small Scholarship from National Program for the Development of Mathematics, VIASM \faExternalLink}}{2023 -- 2024}
+    % {One of 100 people selected in national, for 2 semesters}{}
+    % National Program for the Development of Mathematics  2021--2030 Scholarship 
+    % Scholarship for Math Major Undergraduates
+    
+    \item \subheading{\small Excellent Student - City Level, Grade 12, Third prize in Maths}{2021}
+\end{itemize}
 
 
 
@@ -235,69 +324,6 @@
         \begin{itemize}
             \item Prepared materials for Session 5: Git in the Zone in cs101 workshop
         \end{itemize}
-    
-    \item \heading{\href{https://www.facebook.com/RDSproject/}{Road to Data Science project \faExternalLink}}{Nov. 2021 -- Mar. 2022}{Content writer on Linear Algebra}{}
-\end{itemize}
-
-
-
-\section{Honors and Awards}
-\begin{itemize}
-    \item \subheading{\href{https://viasm.edu.vn/hoat-dong-khoa-hoc/tin-tuc/chi-tiet/hoc-bong-chuong-trinh-toan-nam-hoc-2023-2024}{\small Scholarship from National Program for the Development of Mathematics, VIASM \faExternalLink}}{2023 -- 2024}
-    % {One of 100 people selected in national, for 2 semesters}{}
-    % National Program for the Development of Mathematics  2021--2030 Scholarship 
-    % Scholarship for Math Major Undergraduates
-    
-    \item \subheading{\small Excellent Student - City Level, Grade 12, Third prize in Maths}{2021}
-\end{itemize}
-
-
-
-\section{Projects}
-% \section{Selected projects}
-\begin{itemize}
-    \item \heading{\href{https://github.com/ngntrgduc/seminar}{Handling Missing Data \faGithub}}
-        {Python, scikit-learn, Pytorch}{Seminar coursework}{}
-        \begin{itemize}
-            \item Researched and implemented NeuMiss networks, handle missing data in linear regression problems
-        \end{itemize}
-    
-    \item \heading{\href{https://github.com/ngntrgduc/english-learning-system}{English learning system \faGithub}}
-        {Python, Beautiful Soup, click, rich}{Scripts to learn English efficiently}{}
-        \begin{itemize}
-            \item Implemented async/await to enhance crawling speed, logging to track results, CLI version with fzf
-            \item Interacted with Notion API for vocabulary management, Gemini API to generate definitions, sentences
-        \end{itemize}
-
-    \item \heading{\href{https://github.com/ngntrgduc/get-info-github}{Get Info GitHub \faGithub}}
-        {Python, requests}{Crawl repositories, starred, gists of a user on GitHub}{}
-        \begin{itemize}
-            \item Reduced crawling time by switching from REST API to GraphQL
-        \end{itemize}
-    
-    \item \heading{\href{https://github.com/ngntrgduc/musyc-player}{Musyc player \faGithub}}
-        {Python, Flask}{Music player web app built with Flask}{}
-        % \begin{itemize}
-        %     \item Music player web app built with Flask 
-        % \end{itemize}
-
-    % \item \subheading{\href{https://github.com/ngntrgduc/instagram-downloader}{instagram-downloader \faGithub}}
-    % {Python, Selenium, Beautiful Soup}
-    % \begin{itemize}
-    %     \item Instagram images downloader using Selenium
-    % \end{itemize}
-    
-    % \item \subheading{\href{https://github.com/ngntrgduc/ngntrgduc.github.io}{ngntrgduc.github.io \faGithub}}
-    % {Hugo}
-    % \begin{itemize}
-    %     \item Personal blog about Mathematics, Computer Science, and other interesting topics
-    % \end{itemize}
-    
-    % \item \subheading{\href{https://github.com/ngntrgduc/Dictionary-Look-Up}{Dictionary Look Up \faGithub}}
-    % {HTML, CSS, JS}
-    % \begin{itemize}
-    %     \item Browser extension to look up English vocabulary faster
-    % \end{itemize}
 
 \end{itemize}
 
@@ -307,11 +333,6 @@
 \begin{itemize}
     % \item \heading{IELTS}{2025}{Average: 6.5 (Listening: , Reading: , Writing: , Speaking: )}{}
     
-    % \item \heading{TOEIC Speaking and Writing}{2024}{Total Score: 181+/400 (Speaking: /200, Writing: /200)}{}
-    
-    % \item \heading{TOEIC Listening and Reading}{2024}{Total Score: 450+/990 (Listening: /495, Reading: /495)}{}
-
-    % \item \heading{Vietnamese standardized test of English Proficiency (VSTEP 3-5) }{Jul. 2024}{Score: 6.5/10 (B2)}{}
     \item \subheading{Vietnamese standardized test of English Proficiency (VSTEP 3-5) }{Jul. 2024}
         \begin{itemize}
             \item Score: 6.5/10 (B2)
