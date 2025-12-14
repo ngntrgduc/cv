@@ -12,7 +12,8 @@
 
 \definecolor{primaryColor}{RGB}{0, 80, 160}
 
-\usepackage[hidelinks]{hyperref}
+% \usepackage[hidelinks]{hyperref}
+\usepackage[hidelinks,bookmarks=false]{hyperref}  % Disable bookmarks and auto-open sidebar
 \hypersetup{
     colorlinks,
     % linkcolor=primaryColor,
@@ -178,9 +179,9 @@ Seeking graduate study in Probability and Statistics or Applied Mathematics to f
         Data Mining,
         % Ill-posed problems, 
         % Numerical Optimization, 
-        Data visualization,
+        Data Visualization,
         Financial Mathematics, 
-        Monetary theory,
+        Monetary Theory,
         Information Theory
         \item \textbf{Thesis title:} Lead-Lag Detection in Trading
         % \hfill
@@ -195,11 +196,10 @@ Seeking graduate study in Probability and Statistics or Applied Mathematics to f
     \item \textbf{Programming Languages:} 
     Python, 
     JavaScript, 
-    C\texttt{++},
-    R, 
+    R
+    % C\texttt{++}
     % MATLAB,
     % Julia, 
-    SQL
     
     \item \textbf{Libraries:} 
     NumPy, Pandas, Matplotlib, 
@@ -215,7 +215,7 @@ Seeking graduate study in Probability and Statistics or Applied Mathematics to f
     % PyTorch, 
     Streamlit
 
-    % \item \textbf{Databases:} SQLite
+    \item \textbf{Databases:} SQL, SQLite
 
     % \item \textbf{Others:} 
     \item \textbf{Tools:} 
@@ -237,20 +237,20 @@ Seeking graduate study in Probability and Statistics or Applied Mathematics to f
 % \section{Projects}
 \section{Selected Projects}
 \begin{itemize}
-    \item \subheading{\href{https://github.com/ngntrgduc/movies-manager}{Movies Manager \faGithub}}
-        {Python, Streamlit, Click}
+    \item \subheading{\href{https://github.com/ngntrgduc/movie-manager}{Movie Manager \faGithub}}
+        {Python, Streamlit, Click, SQLite, Power BI, pytest}
         % {Personal Movies Manager web app}{}
         \begin{itemize}
-            \item Developed a movie management tool
-            % Built 
-            % a movies manager 
-            with Streamlit, with full CRUD operations, CLI support, and Power BI dashboard for data visualization
-            % , with SQLites as database
-            % \item Full CRUD support, 
+            \item Built a movie management system with a
+            Streamlit web app, 
+            feature-rich CLI, and Power BI dashboard 
+            % \item SQL-based filtering, fuzzy column matching and sorting
+            \item Optimized performance through lazy importing and replacing pandas workflows with SQL
+            \item Increased scalability by switching from CSV to SQLite database
         \end{itemize}
 
     \item \subheading{\href{https://github.com/ngntrgduc/seminar}{Handling Missing Data \faGithub}}
-        {Python, scikit-learn, Pytorch}
+        {Python, scikit-learn, PyTorch}
         % {Seminar coursework}{}
         \begin{itemize}
             \item Researched and implemented NeuMiss networks to handle missing data in linear regression problems
@@ -260,7 +260,10 @@ Seeking graduate study in Probability and Statistics or Applied Mathematics to f
         {Python, Click}
         % {Scripts to learn English efficiently}{}
         \begin{itemize}
-            \item Built a comprehensive language learning CLI tool, integrated Gemini API to generate definitions and sentences
+            \item Built a 
+            % comprehensive 
+            CLI-based
+            language learning tool, integrated Gemini API to generate definitions and example sentences
             % achieved significant speedup using async/await for web crawling
             % \item integrated Gemini API to generate definitions and sentences
         \end{itemize}
